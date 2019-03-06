@@ -18,10 +18,14 @@ export default {
       },
     ]
   },
+  plugins: [
+    '~plugins/fontawesome.js'
+  ],
   build: {
     extractCSS: true,
   },
   css: [
-    '~assets/style/global.scss'
+    '~assets/style/global.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ]
 }
