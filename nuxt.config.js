@@ -46,7 +46,8 @@ export default {
     ]
   },
   plugins: [
-    '~plugins/fontawesome.js'
+    '~plugins/fontawesome.js',
+    '~plugins/axios.js'
   ],
   modules: [
     '@nuxtjs/axios',

@@ -19,15 +19,23 @@
                     <div class="title">
                         Taskify Your Works
                     </div>
-                    <div class="subtitle has-text-white-ter">
-                        Create a project, organize your tasks into a Kanban board, integrate them with GitHub issues
+                    <div class="subtitle has-text-white-ter is-size-6-mobile">
+                        Robust and minimal project management that can integrate with GitHub
                     </div>
-                    <button class="button is-warning is-medium" @click="signUpWithGithub">
-                    <span class="icon">
-                        <font-awesome-icon :icon="icons.github"></font-awesome-icon>
-                    </span>
-                        <span>Sign up with GitHub</span>
-                    </button>
+                    <div class="field">
+                        <div class="control has-text-centered">
+                            <div class="is-size-6 has-text-grey-lighter">
+                                Get started for free
+                            </div>
+                            <button @click="signUpWithGitHub" class="button is-warning is-medium">
+                                <span class="icon">
+                                    <font-awesome-icon :icon="icons.github"></font-awesome-icon>
+                                </span>
+                                <span>Sign up with GitHub</span>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </header>
@@ -47,6 +55,7 @@
         components: {
             vLogo
         },
+
         data() {
             return {
                 icons: {
@@ -55,16 +64,16 @@
             }
         },
         methods: {
-            signUpWithGithub() {
-
-            }
+            async signUpWithGitHub() {
+                console.log(await this.$store.dispatch("getCsrfToken", null))
+            },
         },
     }
 </script>
 
 <style lang="scss">
     .title, .subtitle {
-        text-shadow: .2rem .2rem 1.4rem rgba(30,30,30,.5) ;
+        text-shadow: .2rem .2rem 1.4rem rgba(30, 30, 30, .5);
     }
 
     .logo {

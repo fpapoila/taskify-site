@@ -1,6 +1,6 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1"
-         clip-rule="evenodd" version="1" viewBox="0 0 750 750">
+         clip-rule="evenodd" viewBox="0 0 750 750">
         <g>
             <path d="M448 277a25 25 0 0 1 25 25v147a25 25 0 0 1-25 25H302a25 25 0 0 1-25-25V302a25 25 0 0 1 25-25h146zM448 504a25 25 0 0 1 25 25v146a25 25 0 0 1-25 25H302a25 25 0 0 1-25-25V529a25 25 0 0 1 25-25h146zM675 50a25 25 0 0 1 25 25v146a25 25 0 0 1-25 25H528a25 25 0 0 1-25-25V75a25 25 0 0 1 25-25h147zM222 50a25 25 0 0 1 25 25v146a25 25 0 0 1-25 25H75a25 25 0 0 1-25-25V75a25 25 0 0 1 25-25h147z"/>
         </g>
