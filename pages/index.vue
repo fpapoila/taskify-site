@@ -45,6 +45,7 @@
 <script>
     import {faGithub} from "@fortawesome/free-brands-svg-icons"
     import vLogo from '@/components/v-logo.vue'
+    import {mapActions} from 'vuex'
 
     export default {
         head() {
@@ -64,9 +65,7 @@
             }
         },
         methods: {
-            async signUpWithGitHub() {
-                console.log(await this.$store.dispatch("getCsrfToken", null))
-            },
+            ...mapActions(['signUpWithGitHub'])
         },
     }
 </script>
