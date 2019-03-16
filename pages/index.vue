@@ -20,7 +20,7 @@
                         Taskify Your Works
                     </div>
                     <div class="subtitle has-text-white-ter is-size-6-mobile">
-                        Robust and minimal project management that can integrate with GitHub
+                        {{this.pageDescription}}
                     </div>
                     <div class="field">
                         <div class="control has-text-centered">
@@ -50,7 +50,15 @@
     export default {
         head() {
             return {
-                title: "Home"
+                title: "Home",
+                meta: [
+                    {hid: "description", name: "description", content: this.pageDescription},
+                    {name: "og:title", content: "Taskify"},
+                    {name: "og:description", content: this.pageDescription},
+                    {name: "og:type", content: "website"},
+                    {name: "og:url", content: "https://taskify.works"},
+                    {name: "og:image", content: "https://taskify.works/icons/open-graph-800x800.png"},
+                ]
             }
         },
         components: {
@@ -59,6 +67,7 @@
 
         data() {
             return {
+                pageDescription: "Robust and Intuitive Project Management Tool",
                 icons: {
                     github: faGithub,
                 }
